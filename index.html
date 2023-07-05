@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Speaker Submission</title>
+    <link rel='stylesheet' href='style.css'/>
+  </head>
+  <body>
+    <header class='speaker-form-header'>
+      <h1>Speaker Submission</h1>
+      <p><em>Want to speak at our fake conference? Fill out
+        this form.</em></p>
+    </header>
+        <form action="" method="get" class="speaker-form">
+            <div class="form-row">
+                <label for="full-name">Name</label>
+                <input type="text" name="full-name" id="full-name">
+            </div>
+            <div class="form-row">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="joe@example.com">
+            </div>
+            <fieldset class="legacy-form-row">
+                <legend>Type of Talk</legend>
+
+                <input type="radio" id="talk-type" name="talk-type" value="main-stage">
+                <label for="talk-type" class="radio-label">Main Stage</label>
+
+                <input type="radio" id="talk-type2" name="talk-type" value="workshop" checked>
+                <label for="talk-type2" class="radio-label">Workhop</label>
+
+            </fieldset>
+
+            <div class="form-row">
+                <label for="t-shirt">T-shirt</label>
+                <select name="t-shirt" id="t-shirt">
+                    <option value="xs">XS</option>
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="L">L</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="abstact">Abstract</label>
+                <textarea name="abstract" id="abstract"></textarea>
+                <div class="instructions">Describe your talk in 500 word or less</div>
+            </div>
+
+            <div class="form-row"">
+                <label for="abailable" class="checkbox-label">
+                    <input type="checkbox" id="abailable" name="available" value="is-abailable">
+                    <span>I'm actually abailable the date of the talk</span>
+                </label>
+            </div>
+            <div class="form-row">
+                <button>Submit</button>
+            </div>
+        </form>
+    
+  </body>
+</html>
